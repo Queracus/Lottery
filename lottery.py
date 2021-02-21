@@ -21,5 +21,3 @@ for player in players:
 	numbers_matched = len(player['numbers'].intersection(lottery_numbers))
 	if numbers_matched > len(winner['numbers'].intersection(lottery_numbers)):
 			winner = player
-
-print(f"{winner['name']} won {int(100) ** numbers_matched}")
